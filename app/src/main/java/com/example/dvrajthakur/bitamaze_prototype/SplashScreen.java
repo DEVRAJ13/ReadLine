@@ -22,7 +22,6 @@ public class SplashScreen extends AppCompatActivity {
         getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_splash_screen);
-
         Resources res = getResources();
         Drawable drawable = res.getDrawable(R.drawable.circular);
         final ProgressBar mProgress = (ProgressBar) findViewById(R.id.circularProgressbar);
@@ -51,7 +50,6 @@ public class SplashScreen extends AppCompatActivity {
                                 startActivity(intent);
                                 finish();
                             }
-
                         }
                     });
                     try {
